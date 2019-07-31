@@ -9,6 +9,8 @@ class Minipro < Formula
   def install
     system 'make'
     bin.install 'minipro'
+    bin.install 'miniprohex'
+    man1.install 'man/minipro.1'
   end
 
   test do
