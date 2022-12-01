@@ -9,9 +9,11 @@ class Minipro < Formula
   def install
     system 'make'
     bin.install 'minipro'
-    bin.install 'miniprohex'
     man1.install 'man/minipro.1'
-  end
+    minipro=share/"minipro"
+    minipro.install 'logicic.xml'
+    minipro.install 'infoic.xml'
+ end
 
   test do
     system 'false'
